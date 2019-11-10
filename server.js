@@ -1,10 +1,17 @@
 // start express sever
 const express = require('express');
 
+//imports db.js contents for use here
+const connectDB = require('./config/db');
+
 // intialize app variable with express
 const app = express();
 
+//connect to DB
+connectDB();
+
 //single endpoint to the browser
+//in postman run get using http://localhost:3000  it will return api is running
 app.get('/', (req, res) => res.send('API is running'));
 
 //define a port variable.  When deployed to Heroku it will look for a variable called PORT

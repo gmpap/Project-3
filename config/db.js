@@ -16,14 +16,14 @@ const connectDB = async () => {
       useUnifiedTopology: true
     });
     //if succesful, return the message
-    console.log('db connected....');
+    console.log('db is now connected....');
   } catch (err) {
     //if error occurs console the error
-    console.log(err.message);
+    console.log(err);
     //now we want to stop the process if failure occurs
-    process.exit(1);
+    //process.exit(1);
     //This allows node.js to exit the code naturally, w/o leaving anything hanging
-    //process.exitCode = 1;
+    process.exitCode = 1;
   }
 };
 //Exports connectDb for use in other files

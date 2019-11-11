@@ -13,7 +13,9 @@ const connectDB = async () => {
     //note:  fixes depreciation warnings
     await mongoose.connect(db, {
       useNewUrlParser: true,
-      useUnifiedTopology: true
+      useUnifiedTopology: true,
+      useCreateIndex: true
+
     });
     //if succesful, return the message
     console.log('db is now connected....');

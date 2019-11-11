@@ -1,6 +1,6 @@
 //Create schema for our Users Model
 //bring in mongoose
-const mongose = require('mongoose');
+const mongoose = require('mongoose');
 
 //create schema, takes in object with all fields we want(name, email (login), password, avatar (image), creation date)
 const UserSchema = new mongoose.Schema({

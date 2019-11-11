@@ -10,7 +10,7 @@ const app = express();
 //connect to DB
 connectDB();
 
-//Intitialize body parser middleware (bodyParser.json now express.json)
+//Intitialize body parser middleware (bodyParser.json now express.json) for use in 
 app.use(express.json({extended: false}))
 
 //single endpoint to the browser

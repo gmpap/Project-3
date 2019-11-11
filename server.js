@@ -10,6 +10,9 @@ const app = express();
 //connect to DB
 connectDB();
 
+//Intitialize body parser middleware (bodyParser.json now express.json)
+app.use(express.json({extended: false}))
+
 //single endpoint to the browser
 //in postman run get using http://localhost:3000  it will return api is running
 app.get('/', (req, res) => res.send('API is running'));

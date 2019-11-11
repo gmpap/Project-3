@@ -9,4 +9,6 @@ router.get('/', (req, res) => res.send('User route'));
 //export router
 module.exports = router;
 
-//Create mongoose model to hold all users fields
+//Create mongoose model to hold all users fields.  Basically register a user for out app
+//to interact with our db we need to create a model
+

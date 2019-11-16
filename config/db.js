@@ -20,7 +20,7 @@ const connectDB = async () => {
     console.log('db is now connected....');
   } catch (err) {
     //if error occurs console the error
-    console.log(err);
+    console.error(err);
     //now we want to stop the process if failure occurs
     //process.exit(1);
     //This allows node.js to exit the code naturally, w/o leaving anything hanging

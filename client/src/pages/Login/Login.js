@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-
+import { Input, FormBtn } from './../../components/Form';
 export default class Login extends Component {
   static propTypes = {
     prop: PropTypes
@@ -10,6 +10,15 @@ export default class Login extends Component {
     email: '',
     password: ''
   };
+
+  handleInputChange = event => {
+    const { name, value } = event.target;
+    this.setState({
+      [name]: value
+    });
+  };
+
+  
 
   render() {
     return (

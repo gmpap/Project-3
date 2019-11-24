@@ -18,7 +18,7 @@ if (process.env.NODE_ENV === 'production') {
 
 //single endpoint to the browser
 //in postman run get using http://localhost:3000  it will return api is running
-app.get('/health-check', (req, res) => res.send('API is running'));
+app.get('/', (req, res) => res.send('API is running'));
 
 //Access our routes
 //access particular users file, as well as all other routers

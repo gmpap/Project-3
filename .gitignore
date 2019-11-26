@@ -1,3 +1,4 @@
 # This is for ignoring node modules, aka the dependencies,
 # so that they aren't loaded/added to the repo
 node_modules/
+.env

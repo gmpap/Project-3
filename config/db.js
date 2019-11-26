@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const config = require('config');
 
 //create a db variable to read the string from config.json
-const db = config.get('mongoURI');
+const db = process.env.MONGOURI;
 //connect to db using async await, using try catch block...similar to get then
 //create variable to call in server.js
 const connectDB = async () => {

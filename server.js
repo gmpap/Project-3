@@ -1,6 +1,13 @@
 const express = require('express');
 const connectDB = require('./config/db');
+const mongoose = require('mongoose');
 const app = express();
+
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
+mongoose.connect(MONGODB_URI);
+
+//TO CALL ENV VARIABLES
+require('dotenv').config();
 
 //conect to db
 connectDB();

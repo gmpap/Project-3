@@ -12,7 +12,6 @@
     "heroku-postbuild": "npm run build",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
-  
   "author": "George Pap",
   "license": "ISC",
   "dependencies": {

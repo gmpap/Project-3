@@ -7,8 +7,12 @@
     "server": "nodemon server",
     "start": "node server",
     "client": "npm start --prefix client",
+    "build": "cd client && npm run build",
+    "install": "cd client && npm install",
+    "heroku-postbuild": "npm run build",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
+  
   "author": "George Pap",
   "license": "ISC",
   "dependencies": {
